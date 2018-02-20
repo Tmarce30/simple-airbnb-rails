@@ -32,6 +32,13 @@
   }
 }
 
+.text-danger {
+  color: #dc3545!important;
+  &:hover {
+    color: #bd2130!important;
+  }
+}
+
 .mr-2 {
   margin-right: .5rem !important;
   padding-top: 3px;
