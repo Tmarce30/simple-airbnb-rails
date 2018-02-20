@@ -27,4 +27,12 @@
 
 .mr-2 {
   margin-right: .5rem !important;
+  padding-top: 3px;
+}
+
+.flat-card-actions {
+  position: relative;
+  background-color: inherit;
+  border-top: 1px solid rgba(160,160,160,0.2);
+  padding: 16px 24px;
 }
