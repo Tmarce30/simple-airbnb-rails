@@ -1,4 +1,4 @@
-<div class="appt-background-image"></div>
+<div class="appt-background-image" style="background-image: url(<%= @flat.picture_url %>)"></div>
 
 <div class="container margin-top-negative">
   <div class="row">
@@ -10,8 +10,6 @@
       <div class="flat-show-card">
         <h3>A bit more about this flat</h3>
         <p><%= @flat.description %></p>
-        <div class="map" style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=#{@flat.address}&zoom=14&size=400x400')">
-        </div>
       </div>
     </div>
     <div class="col-xs-12 col-sm-4">
