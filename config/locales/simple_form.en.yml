@@ -1,4 +1,9 @@
 en:
+  helpers:
+    submit:
+      model_name:
+        create: "Add flat"
+        update: "Update flat"
   simple_form:
     "yes": 'Yes'
     "no": 'No'
