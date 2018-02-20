@@ -25,6 +25,13 @@
   margin-left: 1rem !important;
 }
 
+.text-warning {
+  color: #ffc107!important;
+  &:hover {
+    color: #d39e00!important;
+  }
+}
+
 .mr-2 {
   margin-right: .5rem !important;
   padding-top: 3px;
