@@ -1,5 +1,9 @@
 <div class='container mt-3'>
-  <h1>All our flats (<%= @flats.length %>)</h1>
+  <% if @flats.length >= 1 %>
+    <h1>All our flats (<%= @flats.length %>)</h1>
+  <% else %>
+    <h1>No flat found</h1>
+  <% end %>
 
   <%= render 'card' %>
 </div>
