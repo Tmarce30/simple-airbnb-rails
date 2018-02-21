@@ -73,3 +73,16 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+.navbar-wagon-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-search {
+  display: flex;
+}
+
+.navbar-action-item {
+  margin: 0px 5px;
+}
