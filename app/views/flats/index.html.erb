@@ -1,8 +1,10 @@
 <div class='container mt-3'>
-  <% if @flats.length >= 1 %>
-    <h1>All our flats (<%= @flats.length %>)</h1>
+  <% if params[:query] && @flats.length >=1 %>
+    <h1>Flats for '<span class="search-query"><%= params[:query] %></span>' (<%= @flats.length %>)</h1>
+  <% elsif params[:query] %>
+    <h1>No flat found for '<span class="search-query"><%= params[:query] %></span>'</h1>
   <% else %>
-    <h1>No flat found</h1>
+    <h1>All our flats (<%= @flats.length %>)</h1>
   <% end %>
 
   <%= render 'card' %>
