@@ -1,5 +1,7 @@
 <div class='container mt-3'>
-  <% if params[:query] && @flats.length >=1 %>
+  <% if params[:query] && params[:query].strip.empty? %>
+    <h1>All our flats (<%= @flats.length %>)</h1>
+  <% elsif params[:query] && @flats.length >=1 %>
     <h1>Flats for '<span class="search-query"><%= params[:query] %></span>' (<%= @flats.length %>)</h1>
   <% elsif params[:query] %>
     <h1>No flat found for '<span class="search-query"><%= params[:query] %></span>'</h1>
